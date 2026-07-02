@@ -55,5 +55,68 @@ let VAT = 0.25;
 let total1 = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 console.log(total1);
 
+// Loops (While Loop)
+let text4 = "";
+
+let i = 0;
+while (i < 10) {
+  text4 += "The number is " + i + "\n";
+  i++;
+}
+console.log(text4);
+
+//Loops (The For Loop)
+const cars = 
+[
+"BMW", 
+ "Volvo",
+ "Saab",
+ "Ford", 
+ "Chevrolet", 
+ "Mercedes-Benz", 
+ "Toyota", 
+ "Pontiac", 
+ "Range Rover", 
+ "Honda", 
+ "Mitsubushi", 
+ "Nissan", 
+ "Mazda"
+];
+let text5 = "";
+
+for (let ia = 0; ia < cars.length; ia++) {
+  text5 += cars[ia] + "\n";
+}
+
+console.log(text5);
+
+let ib, x2 = '';
+for (ib = 0; ib < 5; ib = ib + 2) {
+  x2 += ib;
+}
+console.log(x2);
+
+//String Methods (JavaScript String toWellFormed())
+let text6 = "Hello world \uD800";
+let result1 = text6.toWellFormed();
+
+console.log(result1);
+
+//String Methods (JavaScript String isWellFormed())
+let text7 = "Hello World \uD800";
+let text8 = "Hello World";
+let result2 = text7.isWellFormed();
+let result3 = text8.isWellFormed();
+
+console.log(result2);
+console.log(result3);
+
+//
+//
+//
+//
+//
+//
+//
 //
 //
