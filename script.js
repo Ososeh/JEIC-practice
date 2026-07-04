@@ -68,7 +68,7 @@ console.log(text4);
 //Loops (The For Loop)
 const cars = 
 [
-"BMW", 
+ "BMW", 
  "Volvo",
  "Saab",
  "Ford", 
@@ -80,7 +80,13 @@ const cars =
  "Honda", 
  "Mitsubushi", 
  "Nissan", 
- "Mazda"
+ "Mazda",
+ "Peugeot",
+ "Kia",
+ "Volkswagen",
+ "Isuzu",
+ "Lexus",
+ "",
 ];
 let text5 = "";
 
@@ -111,12 +117,71 @@ let result3 = text8.isWellFormed();
 console.log(result2);
 console.log(result3);
 
+//NaN - Not a Number
+/* NaN is a JavaScript reserved word indicating that a number is not a legal number.
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number) */
+let x3 = 100 / "Apple";
+console.log(x3);
+
+//Hexadecimal
+/* JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+This program converts the decimal number 32
+into different number bases using the
+toString() method.
+Example
+let x = 0xFF;
+ */
+let myNumber = 32;
+
+console.table({
+  "Base 36 (Hexatrigesimal)": myNumber.toString(36),
+  "Base 32 (Duotrigesimal)": myNumber.toString(32),
+  "Base 16 (Hexadecimal)": myNumber.toString(16),
+  "Base 12 (Duodecimal)": myNumber.toString(12),
+  "Base 10 (Decimal)": myNumber.toString(10),
+  "Base 8 (Octal)": myNumber.toString(8),
+  "Base 2 (Binary)": myNumber.toString(2)
+});
+
+//Numbers
+/* The toExponential() Method */
+let x4 = 9.656;
+
+console.table({
+    "Exponential(2)": x4.toExponential(2),
+    "Exponential(4)": x4.toExponential(4),
+    "Exponential(6)": x4.toExponential(6)
+});
+
+//The toFixed() Method
+/* toFixed() returns a string, with the number written with a specified number of decimals
+ */
+let x5 = 9.656;
+
+console.table({
+    "Fixed(0)": x5.toFixed(0),
+    "Fixed(2)": x5.toFixed(2),
+    "Fixed(4)": x5.toFixed(4),
+    "Fixed(6)": x5.toFixed(6)
+});
+
+//The toPrecision() Method
+/* toPrecision() returns a string, with a number written with a specified length
+ */
+let x6 = 9.656;
+
+console.table({
+    "Fixed(0)": x6.toPrecision(),
+    "Fixed(2)": x6.toPrecision(2),
+    "Fixed(4)": x6.toPrecision(4),
+    "Fixed(6)": x6.toPrecision(6)
+});
+
 //
-//
-//
-//
-//
-//
-//
+let a1 = 5;
+let b1 = 4;
+
+console.log(a1 & b1);
+
 //
 //
