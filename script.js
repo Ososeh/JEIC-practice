@@ -100,7 +100,18 @@ let ib, x2 = '';
 for (ib = 0; ib < 5; ib = ib + 2) {
   x2 += ib;
 }
-console.log(x2);
+console.log("This is x2", x2);
+
+
+const prices = [10000, 25000, 50000, 15000];
+
+let total = 0;
+
+for (let i = 0; i < prices.length; i++) {
+  total += prices[i];
+}
+
+console.log("Cart total: ₦" + total);
 
 //String Methods (JavaScript String toWellFormed())
 let text6 = "Hello world \uD800";
@@ -146,7 +157,7 @@ console.table({
 //Numbers
 /* The toExponential() Method */
 let x4 = 9.656;
-
+console.log("This is exponential table");
 console.table({
     "Exponential(2)": x4.toExponential(2),
     "Exponential(4)": x4.toExponential(4),
@@ -157,7 +168,7 @@ console.table({
 /* toFixed() returns a string, with the number written with a specified number of decimals
  */
 let x5 = 9.656;
-
+console.log("This is the toFixed table")
 console.table({
     "Fixed(0)": x5.toFixed(0),
     "Fixed(2)": x5.toFixed(2),
@@ -169,19 +180,45 @@ console.table({
 /* toPrecision() returns a string, with a number written with a specified length
  */
 let x6 = 9.656;
-
+console.log("This is the precision table");
 console.table({
-    "Fixed(0)": x6.toPrecision(),
-    "Fixed(2)": x6.toPrecision(2),
-    "Fixed(4)": x6.toPrecision(4),
-    "Fixed(6)": x6.toPrecision(6)
+    "Precision(0)": x6.toPrecision(),
+    "Precision(2)": x6.toPrecision(2),
+    "Precision(4)": x6.toPrecision(4),
+    "Precision(6)": x6.toPrecision(6)
 });
 
-//
+//JavaScript Bitwise
 let a1 = 5;
 let b1 = 4;
 
 console.log(a1 & b1);
 
+// Bitwise AND
+console.log("5 & 3 =", 5 & 3);
+
+// Bitwise OR
+console.log("5 | 3 =", 5 | 3);
+
+// Bitwise XOR
+console.log("5 ^ 3 =", 5 ^ 3);
+
+// Bitwise NOT
+console.log("~5 =", ~5);
+
+// Left Shift
+console.log("5 << 1 =", 5 << 1);
+
+// Right Shift
+console.log("8 >> 1 =", 8 >> 1);
+
+//
+
+//
+//
+//
+//
+//
+//
 //
 //
