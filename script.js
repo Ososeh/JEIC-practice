@@ -212,10 +212,46 @@ console.log("5 << 1 =", 5 << 1);
 // Right Shift
 console.log("8 >> 1 =", 8 >> 1);
 
-//
+//Continue Statement
+const scores = [85, 92, -10, 76, "wrong", 60, 101, 45];
 
-//
-//
+for (let h = 0; h < scores.length; h++) {
+  if (typeof scores[h] !== "number") {
+    console.log("Skipped invalid value:", scores[h]);
+    continue;
+  }
+
+  if (scores[h] < 0 || scores[h] > 100) {
+    console.log("Skipped out-of-range score:", scores[h]);
+    continue;
+  }
+
+  console.log("Valid score:", scores[h]);
+}
+
+//Break Statement
+const products = ["Laptop", "Phone", "PlayStation", "TV", "Headphones"];
+
+for (let l = 0; l < products.length; l++) {
+  if (products[l] === "PlayStation") {
+    console.log("Product found:", products[l]);
+    break;
+  }
+
+  console.log("Checking:", products[l]);
+}
+
+//Local Variables 
+/* function calculateCartTotal() {
+  let price = 50000;
+  let quantity = 2;
+  let total = price * quantity;
+
+  console.log("Cart total: ₦" + total);
+}
+
+calculateCartTotal(); */
+
 //
 //
 //
