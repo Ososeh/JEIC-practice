@@ -269,7 +269,17 @@ let greet = () => {
   console.log("Hello from an arrow function!");
 };
 
-greet(); */
+greet(); 
+
+let calculateTotal = function (price, quantity) {
+  return price * quantity;
+};
+
+let result = calculateTotal(250000, 2);
+
+console.log("Total price: ₦" + result);
+*/
+
 
 
 //
