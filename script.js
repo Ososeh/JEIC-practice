@@ -280,8 +280,46 @@ let result = calculateTotal(250000, 2);
 console.log("Total price: ₦" + result);
 */
 
+//Function Parameters
+function addToCart(productName, quantity) {
+  console.log(quantity + " " + productName + " added to cart.");
+}
+
+addToCart("Gaming Mouse", 2);
+
+//Function Return 
+/* function checkAge(age) {
+  if (age < 18) {
+    return "Too young";
+  }
+  return "Access granted";
+}
+console.log("Age 20:", checkAge(20)); // Returns: "Access granted"
+console.log("Age 15:", checkAge(15)); // Returns: "Too young" */
+
+//Function Arguments (The Arguments Object)
+/* x7 = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+console.log("The maximum value is:", x7); */
+
+//
 
 
+//
+//
+//
+//
+//
+//
 //
 //
 //
