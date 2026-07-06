@@ -242,7 +242,8 @@ for (let l = 0; l < products.length; l++) {
 }
 
 //Local Variables 
-/* function calculateCartTotal() {
+/* A variable created inside a function or block usually lives only inside that function or block.
+ *//* function calculateCartTotal() {
   let price = 50000;
   let quantity = 2;
   let total = price * quantity;
@@ -252,7 +253,25 @@ for (let l = 0; l < products.length; l++) {
 
 calculateCartTotal(); */
 
-//
+//Arrow Functions stored in variables
+/* const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const divide = (a, b) => a / b;
+
+console.log(add(5, 2));
+console.log(subtract(5, 2));
+console.log(multiply(5, 2));
+console.log(divide(5, 2));
+
+
+let greet = () => {
+  console.log("Hello from an arrow function!");
+};
+
+greet(); */
+
+
 //
 //
 //
