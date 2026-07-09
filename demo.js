@@ -71,7 +71,7 @@ const myArr = [[1,2],[3,4],[5,6]];
 const newList = [[1000,20000,30000], [0.7,0.8,0.9], [20,30,40,45], [11,13,17,21]];
 const newArr = myArr.flat();
 console.log("The new array is:", newArr); // 1,2,3,4,5,6
-console.log("The new list is:", newList.flat()); // 1000,20000,30000,0.7,0.8,0.9,20,30,40,45,11,13,17,21
+console.log("The new list is:", "\n" ,newList.flat()); // 1000,20000,30000,0.7,0.8,0.9,20,30,40,45,11,13,17,21
 
 //JavaScript Array flatMap()
 /* The flatMap() method first maps each element using a mapping function, then flattens the result into a new array.
@@ -92,5 +92,19 @@ console.log("The new array is:", fruits6); // Banana,Orange,Lemon,Kiwi,Apple,Man
 const fruits7 = ["Banana", "Orange", "Apple", "Mango"];
 fruits7.splice(1, 3, "Lemon", "Kiwi");
 console.log("The replaced array is:",fruits7);
+
+/* NOTE:The difference between the new toSpliced() method and the old splice() method
+ is that the new method creates a new array, keeping the original array unchanged, 
+ while the old method altered the original array. */
+
+//JavaScript toSpliced()
+/* The toSpliced() method returns a new array with some elements removed and/or replaced.
+The toSpliced() method does not change the original array. */   
+fruits7.toSpliced(1, 3, "Lemon", "Kiwi");
+console.log("The spliced array is:",fruits7);
+
+/* NOTE:The difference between the new toSpliced() method and the old splice() method
+ is that the new method creates a new array, keeping the original array unchanged, 
+ while the old method altered the original array. */
 
 //
