@@ -63,3 +63,34 @@ console.log("Before copyWithin:", fruits4);
 const fruits5 = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya", "Pineapple"];
 fruits5.copyWithin(3, 0, 3);
 console.log("After copyWithin:", fruits5); // Banana,Orange,Banana,Orange,Kiwi
+
+//JavaScript Array flat()
+/* The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+The flat() method does not change the original array. */
+const myArr = [[1,2],[3,4],[5,6]];
+const newList = [[1000,20000,30000], [0.7,0.8,0.9], [20,30,40,45], [11,13,17,21]];
+const newArr = myArr.flat();
+console.log("The new array is:", newArr); // 1,2,3,4,5,6
+console.log("The new list is:", newList.flat()); // 1000,20000,30000,0.7,0.8,0.9,20,30,40,45,11,13,17,21
+
+//JavaScript Array flatMap()
+/* The flatMap() method first maps each element using a mapping function, then flattens the result into a new array.
+It is identical to a map followed by a flat of depth 1. */
+const arr1 = [1, 2, 3, 4];
+const arr2 = arr1.flatMap(x => [x * 2]);
+console.log("The new array is:", arr2); // 2,4,6,8
+
+// JavaScript Array splice()
+/* The splice() method adds and/or removes array elements.
+The splice() method overwrites the original array. 
+The key idea is:
+splice() can add, remove, or replace items in an array.*/  
+const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+fruits6.splice(2, 0, "Lemon", "Kiwi");
+console.log("The new array is:", fruits6); // Banana,Orange,Lemon,Kiwi,Apple,Mango
+
+const fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+fruits7.splice(1, 3, "Lemon", "Kiwi");
+console.log("The replaced array is:",fruits7);
+
+//
