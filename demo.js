@@ -158,6 +158,7 @@ const profile3 = {
 };
 console.log("The nested profile is:", profile3.address.city);
 console.log("The nested profile is:", profile3["address"]["state"]);
+console.log(profile3);
 
 const profile4 = {
     firstName:"Ethan", 
@@ -170,3 +171,6 @@ let profile4FullName = function() {
     return this.firstName + " " + this.lastName + " " + this.age + " " + this.occupation;
     };
 console.log("The full name is:", profile4FullName.call(profile4));
+
+//Objects Display (Using JSON.stringify())
+console.log("The profile as JSON is:", JSON.stringify(profile4));   
