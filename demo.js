@@ -106,5 +106,67 @@ console.log("The spliced array is:",fruits7);
 /* NOTE:The difference between the new toSpliced() method and the old splice() method
  is that the new method creates a new array, keeping the original array unchanged, 
  while the old method altered the original array. */
+ 
+ 
+//Objects
+/* JavaScript objects are written with curly braces {}.
+Objects can contain many values in terms of properties and methods.*/
+const profile = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+console.log("The person's profile is:", profile); // { firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue' }
+console.log("The person's first name is:", profile["firstName"]); // John
 
-//
+const profile1 = {
+    firstName:"John", 
+    lastName:"Wick", 
+    age:40,
+    occupation:"Assassin", 
+    eyeColor:"brown",
+    fullName: function() {
+        return this.firstName + " " + this.lastName + " " + this.age + " " + this.occupation;
+    }
+};
+console.log("This profile is: ", profile1.fullName());
+
+//Objects (Deleting Properties)
+/* The delete keyword deletes a property from an object. */
+const profile2 = {
+    firstName:"James", 
+    lastName:"Bond", 
+    age:38, 
+    eyeColor:"green",
+    occupation:"Spy", 
+    fullName: function() {
+        return this.firstName + " " + this.lastName + " " + "is a " + this.occupation;
+    }
+};
+delete profile2.age;
+console.log("The new profile is:", profile2);
+console.log(profile2.fullName());
+
+//Nested Objects
+/* Objects can contain other objects, which is called nested objects. */
+const profile3 = {
+    firstName:"Lloyd",
+    lastName:"Banks",
+    age:41,
+    eyeColor:"brown",
+    address: {
+        street: "123 Main St",
+        city: "New York",
+        state: "NY"
+    }
+};
+console.log("The nested profile is:", profile3.address.city);
+console.log("The nested profile is:", profile3["address"]["state"]);
+
+const profile4 = {
+    firstName:"Ethan", 
+    lastName:"Hunt", 
+    age:35, 
+    eyeColor:"hazel",
+    occupation:"Hacker", }
+
+let profile4FullName = function() {
+    return this.firstName + " " + this.lastName + " " + this.age + " " + this.occupation;
+    };
+console.log("The full name is:", profile4FullName.call(profile4));
